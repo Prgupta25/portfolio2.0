@@ -58,7 +58,7 @@ circle.forEach(elem=>{
 })
 
 // mix with portfolio section
-var mixer = mixitup(`.portfolio-gallery`);
+// var mixer = mixitup(`.portfolio-gallery`);
 
 // footer
 let menuLi = document.querySelectorAll('header ul li a');
@@ -83,7 +83,8 @@ window.addEventListener("scroll",function(){
 let menuIcon = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
 
-menuIcon.oneclick = ()=>{
+menuIcon.onclick = ()=>{
+
     menuIcon.classList.toggle("bx-x");
     navlist.classList.toggle("open");
 }
